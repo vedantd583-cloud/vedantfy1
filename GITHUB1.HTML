@@ -371,5 +371,232 @@
         <p>© 2026 Apex Cars | Sports Car Showcase</p>
     </footer>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Most Expensive Cars</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0b0b0b;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #111, #252525);
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            color: #bbb;
+            font-size: 18px;
+        }
+
+        .cars-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .car-card {
+            background: #171717;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: 0.3s;
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .car-info {
+            padding: 22px;
+        }
+
+        .car-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .car-info p {
+            color: #aaa;
+            line-height: 1.6;
+        }
+
+        .price {
+            color: #e0b84c;
+            font-size: 21px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #e0b84c;
+            color: #111;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            background: #111;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏎️ World's Most Expensive Cars</h1>
+    <p>Luxury • Performance • Exclusivity</p>
+</header>
+
+<section class="cars-container">
+
+    <!-- Rolls-Royce -->
+    <div class="car-card">
+        <img
+            src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80"
+            alt="Luxury Rolls Royce">
+        <div class="car-info">
+            <h2>Rolls-Royce Phantom</h2>
+            <div class="price">₹12+ Crore</div>
+            <p>
+                A flagship luxury sedan known for its handcrafted interior,
+                comfort and extensive customization.
+            </p>
+            <br>
+            <button onclick="showMessage('Rolls-Royce Phantom')">
+                View Car
+            </button>
+        </div>
+    </div>
+
+    <!-- Ferrari -->
+    <div class="car-card">
+        <img
+            src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=900&q=80"
+            alt="Ferrari sports car">
+        <div class="car-info">
+            <h2>Ferrari Purosangue</h2>
+            <div class="price">₹9.93 Crore</div>
+            <p>
+                Ferrari's high-performance four-door model combining
+                sports-car performance with everyday practicality.
+            </p>
+            <br>
+            <button onclick="showMessage('Ferrari Purosangue')">
+                View Car
+            </button>
+        </div>
+    </div>
+
+    <!-- Lamborghini -->
+    <div class="car-card">
+        <img
+            src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=900&q=80"
+            alt="Lamborghini sports car">
+        <div class="car-info">
+            <h2>Lamborghini Revuelto</h2>
+            <div class="price">₹8.70 Crore</div>
+            <p>
+                A V12 hybrid supercar combining Lamborghini's dramatic
+                styling with modern hybrid technology.
+            </p>
+            <br>
+            <button onclick="showMessage('Lamborghini Revuelto')">
+                View Car
+            </button>
+        </div>
+    </div>
+
+    <!-- Aston Martin -->
+    <div class="car-card">
+        <img
+            src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=900&q=80"
+            alt="Aston Martin">
+        <div class="car-info">
+            <h2>Aston Martin Vanquish</h2>
+            <div class="price">₹8.73 Crore</div>
+            <p>
+                An ultra-luxury grand tourer combining elegant design,
+                high performance and premium craftsmanship.
+            </p>
+            <br>
+            <button onclick="showMessage('Aston Martin Vanquish')">
+                View Car
+            </button>
+        </div>
+    </div>
+
+    <!-- Bugatti -->
+    <div class="car-card">
+        <img
+            src="https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?auto=format&fit=crop&w=900&q=80"
+            alt="Bugatti">
+        <div class="car-info">
+            <h2>Bugatti La Voiture Noire</h2>
+            <div class="price">$13+ Million</div>
+            <p>
+                A one-off Bugatti hypercar created as an extremely exclusive
+                interpretation of the marque's heritage.
+            </p>
+            <br>
+            <button onclick="showMessage('Bugatti La Voiture Noire')">
+                View Car
+            </button>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Luxury Cars | Designed with HTML & CSS
+</footer>
+
+<script>
+    function showMessage(carName) {
+        alert("You selected: " + carName);
+    }
+</script>
+
 </body>
 </html>
+
